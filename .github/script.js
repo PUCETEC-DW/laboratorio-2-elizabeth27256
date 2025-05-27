@@ -13,7 +13,7 @@ fetch('https://restcountries.com/v3.1/all')
         divResultado.innerHTML = '<p>Error al cargar los países</p>';
         console.error(error);
     });
-    
+
 function mostrarPaises(paises) {
     divResultado.innerHTML = '';
     paises.forEach(pais => {
@@ -27,3 +27,11 @@ function mostrarPaises(paises) {
         divResultado.appendChild(div);
     });
 }
+
+inputBuscar.addEventListener('input', () => {
+    const texto = inputBuscar.value.toLowerCase();
+    const filtrados = datosPaises.filter(pais =>
+        pais.name.official.toLowerCase().includes(texto)
+    );
+    mostrarPaises(filtrados);
+});
