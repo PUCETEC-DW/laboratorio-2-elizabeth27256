@@ -1,0 +1,38 @@
+body {
+    margin: 2px;
+    background-color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#buscar {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: 800px;
+    max-width: 400px;
+}
+
+#resultado {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.pais {
+    background: bisque;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.pais img {
+    width: 100px;
+    height: auto;
+}
