@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+#buscar {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: 800px;
+    max-width: 400px;
+}
+
+#resultado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pais {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    width: 200px;
+    text-align: center;
+}
+
+.pais img {
+    width: 100px;
+    height: 100px;
+}
